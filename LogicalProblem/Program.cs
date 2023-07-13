@@ -7,7 +7,7 @@ namespace LogicalProblems
         public static void Main(string[] args)
         {
             Console.WriteLine("Enter the input :");
-            Console.WriteLine("1.Fibonacci series\n2.PerfectNumber\n3.PrimeNUmber\n4.Reverse a number");
+            Console.WriteLine("1.Fibonacci series\n2.PerfectNumber\n3.PrimeNUmber\n4.Reverse a number\n5.coupon Number");
             int input = Convert.ToInt32(Console.ReadLine());
             switch (input)
             {    
@@ -22,6 +22,9 @@ namespace LogicalProblems
                     break;
                 case 4:
                     ReverseNumber.Reverse();
+                    break;
+                case 5:
+                    Coupon.GetCoupon();
                     break;
                 default:
                     break;
