@@ -5,14 +5,21 @@
         internal static void GetAmount()
         {
             Console.Write(" Input the principal : ");
-            int p = Convert.ToInt32(Console.ReadLine());
+            Double p = Convert.ToDouble(Console.ReadLine());
             Console.Write(" Input the years : ");
-            int y = Convert.ToInt32(Console.ReadLine());
+            double y = Convert.ToDouble(Console.ReadLine());
             Console.Write(" Input the percent interest compounded : ");
-            int r = Convert.ToInt32(Console.ReadLine());
-            int n = 12 * y;
-            double output = (p * r) / (1 - (Math.Pow((1+r),-n)) );
-            Console.WriteLine("The output is :"+output);
+            decimal R = Convert.ToDecimal(Console.ReadLine());            
+            
+            double r = Convert.ToDouble(Decimal.Divide(R, Convert.ToDecimal(1200)));  // r = R/(1200)
+            double n = Convert.ToDouble(12) * y; // n = 12*y
+
+            double divident = p * r;
+            double divisor =1- Math.Pow(1 + r, -n);
+            double result = divident/divisor;
+            Console.WriteLine(result);
+
+
         }
     }
 }
