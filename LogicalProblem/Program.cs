@@ -9,7 +9,7 @@ namespace LogicalProblems
         public static void Main(string[] args)
         {
             Console.WriteLine("Enter the input :");
-            Console.WriteLine("1.Fibonacci series\n2.PerfectNumber\n3.PrimeNUmber\n4.Reverse a number\n5.coupon Number\n6.Stopwatch\n7.Vending Meachine");
+            Console.WriteLine("1.Fibonacci series\n2.PerfectNumber\n3.PrimeNUmber\n4.Reverse a number\n5.coupon Number\n6.Stopwatch\n7.Vending Meachine\n8.Date to day");
             int input = Convert.ToInt32(Console.ReadLine());
             switch (input)
             {    
@@ -31,9 +31,13 @@ namespace LogicalProblems
                 case 6:
                     Stopwatchs.GetTime();
                     break;
-                    case 7:
+                case 7:
                     VendingMeachine.GetAmount();
                     break;
+                case 8:
+                    DayOfDate.getDay();
+                    break;
+
                 default:
                     break;
 
