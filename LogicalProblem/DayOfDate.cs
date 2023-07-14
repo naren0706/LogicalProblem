@@ -11,7 +11,7 @@
             Console.Write(" Input the Year : ");
             int year = Convert.ToInt32(Console.ReadLine());
 
-            DateTime ss = new DateTime(date, month, year);
+            DateTime ss = new DateTime(year, month, date);
 
             Console.WriteLine(ss.DayOfWeek);
         }
