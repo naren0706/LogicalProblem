@@ -1,5 +1,7 @@
 ﻿using LogicalProblem;
 using System;
+using System.Diagnostics;
+
 namespace LogicalProblems
 {
     class Program
@@ -7,7 +9,7 @@ namespace LogicalProblems
         public static void Main(string[] args)
         {
             Console.WriteLine("Enter the input :");
-            Console.WriteLine("1.Fibonacci series\n2.PerfectNumber\n3.PrimeNUmber\n4.Reverse a number\n5.coupon Number");
+            Console.WriteLine("1.Fibonacci series\n2.PerfectNumber\n3.PrimeNUmber\n4.Reverse a number\n5.coupon Number\n6.Stopwatch");
             int input = Convert.ToInt32(Console.ReadLine());
             switch (input)
             {    
@@ -26,10 +28,15 @@ namespace LogicalProblems
                 case 5:
                     Coupon.GetCoupon();
                     break;
+                case 6:
+                    Stopwatchs.GetTime();
+                    break;
                 default:
                     break;
 
             }
         }
     }
+
+    
 }
